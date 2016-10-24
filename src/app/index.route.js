@@ -9,10 +9,16 @@
   function routerConfig($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('home', {
-        url: '/',
+        url: '/dashboard',
         templateUrl: 'app/main/main.html',
         controller: 'MainController',
         controllerAs: 'main'
+      })
+      .state('cover', {
+        url: '/',
+        templateUrl: 'components/cover/cover.html',
+        controller: 'CoverController',
+        controllerAs: 'cover'
       });
 
     $urlRouterProvider.otherwise('/');

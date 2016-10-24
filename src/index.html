@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="bc">
+<html ng-app="bc" ng-controller="MainController as main">
   <head>
     <meta charset="utf-8">
     <title>bc</title>
@@ -23,7 +23,6 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
     <div ui-view></div>
 
     <!-- build:js(src) scripts/vendor.js -->
@@ -42,5 +41,19 @@
     <!-- endinject -->
     <!-- endbuild -->
 
+    <script src="components/cover/cover.controller.js"></script>
+
+    <script>
+      // Initialize Firebase
+      console.log('Im here');
+      var config = {
+        apiKey: "AIzaSyDpBcnqW8lds5EJtrGjUiI4G2RYIEprKKo",
+        authDomain: "mekan-4e5c4.firebaseapp.com",
+        databaseURL: "https://mekan-4e5c4.firebaseio.com",
+        storageBucket: "mekan-4e5c4.appspot.com",
+        messagingSenderId: "895644856207"
+      };
+      firebase.initializeApp(config);
+    </script>
   </body>
 </html>
