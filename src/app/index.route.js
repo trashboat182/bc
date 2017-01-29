@@ -16,7 +16,7 @@
       })
       .state('cover', {
         url: '/',
-        templateUrl: 'components/cover/cover.html',
+        templateUrl: 'app/components/cover/cover.html',
         controller: 'CoverController',
         controllerAs: 'cover'
       });
