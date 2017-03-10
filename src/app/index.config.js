@@ -3,7 +3,7 @@
 
   angular
     .module('bc')
-    .config(config);
+    .config(config)
 
   /** @ngInject */
   function config($logProvider, toastrConfig) {
@@ -16,6 +16,15 @@
     toastrConfig.positionClass = 'toast-top-right';
     toastrConfig.preventDuplicates = true;
     toastrConfig.progressBar = true;
+    var config = {
+      apiKey: "AIzaSyAFn3v-YDIHS5k3w9tMVyC-Bu4EBAFZJ_U",
+      authDomain: "qualia-379e2.firebaseapp.com",
+      databaseURL: "https://qualia-379e2.firebaseio.com",
+      storageBucket: "qualia-379e2.appspot.com",
+      messagingSenderId: "596372653299"
+    };
+    firebase.initializeApp(config);
   }
+
 
 })();
