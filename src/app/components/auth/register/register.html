@@ -1,7 +1,4 @@
-
 <div class="container">
-
-
   <div class="omb_login">
     <h3 class="omb_authTitle">Register</h3>
     <div class="row omb_row-sm-offset-3 omb_socialButtons">
@@ -38,7 +35,7 @@
           <div class="input-group">
             <span class="input-group-addon"><i class="fa fa-user"></i></span>
             <input type="text"
-                   ng-model="login.email"
+                   ng-model="register.email"
                    class="form-control"
                    name="username"
                    placeholder="email address">
@@ -51,11 +48,11 @@
                     class="form-control"
                     name="password"
                     placeholder="Password"
-                    ng-model="login.password">
+                    ng-model="register.password">
           </div>
           <span class="help-block" ng-if="login.error.password">Password error</span>
 
-          <button class="btn btn-lg btn-primary btn-block"  ng-click="login.checkLogin()">Login</button>
+          <button class="btn btn-lg btn-primary btn-block"  ng-click="register.signUp()">Register</button>
         </form>
       </div>
     </div>

@@ -30,6 +30,7 @@ function LoginController($state,LoginService) {
   }
 
   function signUp() {
+    console.log('Here i register');
     $state.go('register');
   }
 
