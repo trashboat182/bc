@@ -53,7 +53,7 @@
                     placeholder="Password"
                     ng-model="login.password">
           </div>
-          <span class="help-block">Password error</span>
+          <span class="help-block" ng-if="login.error.password">Password error</span>
 
           <button class="btn btn-lg btn-primary btn-block"  ng-click="login.checkLogin()">Login</button>
         </form>
@@ -61,7 +61,7 @@
     </div>
     <div class="row omb_row-sm-offset-3">
       <div class="col-xs-12 col-sm-3">
-        <label class="checkbox">
+        <label class="checkbox" style="margin-left:20px;">
           <input type="checkbox" value="remember-me">Remember Me
         </label>
       </div>
