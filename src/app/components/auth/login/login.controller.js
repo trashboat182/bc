@@ -23,6 +23,7 @@ function LoginController($state,LoginService) {
     console.log('password: '+login.password);
     LoginService.signIn(login.email,login.password).then(function(auth){
       console.log(auth)
+      $state.go('dashboard');
     })
     .catch(function(e){
       console.log(e)

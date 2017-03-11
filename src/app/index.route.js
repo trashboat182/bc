@@ -14,12 +14,6 @@
         controller: 'CoverController',
         controllerAs: 'cover'
       })
-      .state('home', {
-        url: '/dashboard',
-        templateUrl: 'app/main/main.html',
-        controller: 'MainController',
-        controllerAs: 'main'
-      })
       .state('login', {
         url: '/login',
         templateUrl: 'app/components/auth/login/login.html',
@@ -31,6 +25,12 @@
         templateUrl: 'app/components/auth/register/register.html',
         controller: 'RegisterController',
         controllerAs: 'register'
+      })
+      .state('dashboard', {
+        url: '/dashboard',
+        templateUrl: 'app/components/dashboard/dashboar.html',
+        controller: 'DashboardController',
+        controllerAs: 'dashboard'
       });
 
     $urlRouterProvider.otherwise('/');
