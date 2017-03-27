@@ -1,129 +1,116 @@
-<video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
-  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-  <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
-  <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
-</video>
-<div id="polina">
-  <h1>Polina</h1>
-  <p>filmed by Alexander Wagner 2011
-  <p><a href="http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video">original article</a>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo. Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus. Etiam volutpat vel enim at auctor.</p>
-  <p>Aenean pharetra convallis pellentesque. Vestibulum et metus lectus. Nunc consectetur, ipsum in viverra eleifend, erat erat ultricies felis, at ultricies mi massa eu ligula. Suspendisse in justo dapibus metus sollicitudin ultrices id sed nisl.</p>
-  <button>Pause</button>
-  <p class="animated infinite" ng-class="cover.classAnimation">
-    <button type="button" class="btn btn-lg btn-success" ng-click="cover.login()">Iniciar</button>
-    <button type="button" class="btn btn-lg btn-success" ng-click="cover.register()">Registrarse</button>
-  </p>
+<nav class="navbar navbar-transparent navbar-fixed-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <img src="app/components/cover/images/flags/US.png"/>
+            English(US)
+            <b class="caret"></b>
+          <ul class="dropdown-menu">
+            <li><a href="#"><img src="app/components/cover/images/flags/DE.png"/> Deutsch</a></li>
+            <li><a href="#"><img src="app/components/cover/images/flags/GB.png"/> English(UK)</a></li>
+            <li><a href="#"><img src="app/components/cover/images/flags/FR.png"/> Français</a></li>
+            <li><a href="#"><img src="app/components/cover/images/flags/RO.png"/> Română</a></li>
+            <li><a href="#"><img src="app/components/cover/images/flags/IT.png"/> Italiano</a></li>
+
+            <li class="divider"></li>
+            <li><a href="#"><img src="app/components/cover/images/flags/ES.png"/> Español <span class="label label-default">soon</span></a></li>
+            <li><a href="#"><img src="app/components/cover/images/flags/BR.png"/> Português <span class="label label-default">soon</span></a></li>
+            <li><a href="#"><img src="app/components/cover/images/flags/JP.png"/> 日本語 <span class="label label-default">soon</span></a></li>
+            <li><a href="#"><img src="app/components/cover/images/flags/TR.png"/> Türkçe <span class="label label-default">soon</span></a></li>
+
+          </ul>
+        </li>
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="#">
+            <i class="fa fa-facebook-square"></i>
+            Like
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-google-plus-square"></i>
+            Plus
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-pinterest"></i>
+            Pin
+          </a>
+        </li>
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+
+<div class="main" style="background-image: url('app/components/cover/images/video_bg.jpg')">
+  <video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+    <source src="app/components/cover/video/time.webm" type="video/webm">
+    <source src="app/components/cover/video/time.mp4" type="video/mp4">
+    Video not supported
+  </video>
+  <!--    Change the image source '/images/video_bg.jpg')" with your favourite image.     -->
+
+  <div class="cover black" data-color="black"></div>
+
+  <!--   You can change the black color for the filter with those colors: blue, green, red, orange       -->
+
+  <div class="container">
+    <h1 class="logo cursive">
+      Time Lapse
+    </h1>
+    <!--  H1 can have 2 designs: "logo" and "logo cursive"           -->
+
+    <div class="content">
+      <h4 class="motto">Really awesome time lapse of a beautiful city.</h4>
+      <div class="subscribe">
+        <h5 class="info-text">
+          Join the waiting list for the beta. We keep you posted.
+        </h5>
+        <div class="row">
+          <!--<div class="col-md-4 col-md-offset-4 col-sm6-6 col-sm-offset-3 ">-->
+            <!--<form class="form-inline" role="form">-->
+              <!--<div class="form-group">-->
+                <!--<label class="sr-only" for="exampleInputEmail2">Email address</label>-->
+                <!--<input type="email" class="form-control transparent" placeholder="Your email here...">-->
+              <!--</div>-->
+              <!--<button type="submit" class="btn btn-warning btn-fill">Notify Me</button>-->
+            <!--</form>-->
+          <!--</div>-->
+          <!-- Button -->
+          <div class="col-sm-12">
+            <div class="text-center">
+              <button type="submit"
+                      class="btn btn-warning btn-fill"
+                      ng-click="cover.goDashboard()">
+                Notify Me
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      Made with <i class="fa fa-heart heart"></i> by <a href="http://www.creative-tim.com">Creative Tim</a>. Free download <a href="http://www.creative-tim.com/product/coming-sssoon-page">here.</a>
+    </div>
+  </div>
 </div>
-
-<style>
-  body {
-    margin: 0;
-    background: #000;
-  }
-  video {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
-    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
-    background-size: cover;
-    transition: 1s opacity;
-  }
-  .stopfade {
-    opacity: .5;
-  }
-
-  #polina {
-    font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
-    font-weight:100;
-    background: rgba(0,0,0,0.3);
-    color: white;
-    padding: 2rem;
-    width: 33%;
-    margin:2rem;
-    float: right;
-    font-size: 1.2rem;
-  }
-  h1 {
-    font-size: 3rem;
-    text-transform: uppercase;
-    margin-top: 0;
-    letter-spacing: .3rem;
-  }
-  #polina button {
-    display: block;
-    width: 80%;
-    padding: .4rem;
-    border: none;
-    margin: 1rem auto;
-    font-size: 1.3rem;
-    background: rgba(255,255,255,0.23);
-    color: #fff;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: .3s background;
-  }
-  #polina button:hover {
-    background: rgba(0,0,0,0.5);
-  }
-
-  a {
-    display: inline-block;
-    color: #fff;
-    text-decoration: none;
-    background:rgba(0,0,0,0.5);
-    padding: .5rem;
-    transition: .6s background;
-  }
-  a:hover{
-    background:rgba(0,0,0,0.9);
-  }
-  @media screen and (max-width: 500px) {
-    div{width:70%;}
-  }
-  @media screen and (max-device-width: 800px) {
-    html { background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed; }
-    #bgvid { display: none; }
-  }
-</style>
-<script>
-  var vid = document.getElementById("bgvid");
-  var pauseButton = document.querySelector("#polina button");
-
-  if (window.matchMedia('(prefers-reduced-motion)').matches) {
-    vid.removeAttribute("autoplay");
-    vid.pause();
-    pauseButton.innerHTML = "Paused";
-  }
-
-  function vidFade() {
-    vid.classList.add("stopfade");
-  }
-
-  vid.addEventListener('ended', function()
-  {
-// only functional if "loop" is removed
-    vid.pause();
-// to capture IE10
-    vidFade();
-  });
-
-
-  pauseButton.addEventListener("click", function() {
-    vid.classList.toggle("stopfade");
-    if (vid.paused) {
-      vid.play();
-      pauseButton.innerHTML = "Pause";
-    } else {
-      vid.pause();
-      pauseButton.innerHTML = "Paused";
-    }
-  })
-
-</script>

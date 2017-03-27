@@ -28,7 +28,7 @@
       })
       .state('dashboard', {
         url: '/dashboard',
-        templateUrl: 'app/components/dashboard/dashboar.html',
+        templateUrl: 'app/components/dashboard/dashboard.html',
         controller: 'DashboardController',
         controllerAs: 'dashboard'
       });
