@@ -214,7 +214,7 @@
   }
 
   .topnav {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .lead {
@@ -360,4 +360,26 @@
   p.copyright {
     margin: 15px 0 0;
   }
+
+  .navbar-nav > li > a {padding-top:22px !important; padding-bottom:22px !important;}
+  .navbar-brand {padding-top:22px !important; padding-bottom:22px !important;}
+  .navbar {min-height:70px}
+  .navbar-default .navbar-toggle{margin-top:16px !important;}
+
+  /* Landscape phones and down */
+  @media (max-width: 480px) {
+    .navbar-nav > li > a {padding-top:15px !important; padding-bottom:15px !important;}
+    .navbar-brand {padding-top:15px !important; padding-bottom:15px !important;}
+    .navbar {min-height:40px}
+    .navbar-default .navbar-toggle{margin-top:10px !important;}
+  }
+
+  /* Landscape phone to portrait tablet */
+  @media (max-width: 767px) {  }
+
+  /* Portrait tablet to landscape and desktop */
+  @media (min-width: 768px) and (max-width: 979px) {  }
+
+  /* Large desktop */
+  @media (min-width: 1200px) {  }
 </style>
