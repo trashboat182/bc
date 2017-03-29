@@ -16,6 +16,21 @@ function DashboardController($state,LoginService) {
    https://startbootstrap.com/
 
   */
+  dashboard.login = login;
+  dashboard.register = register;
+  dashboard.goDashboard = goDashboard;
+
+  function login() {
+    $state.go('login');
+  }
+
+  function register() {
+    $state.go('register');
+  }
+
+  function goDashboard() {
+    $state.go('dashboard');
+  }
 
 
 }
