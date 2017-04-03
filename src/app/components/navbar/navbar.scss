@@ -3,6 +3,9 @@ $bgHighlight    : #191c2d;
 $colDefault     : #ffffff;
 $colHighlight   : #dfdfdf;
 $dropDown       : false;
+.main-icon{
+  margin-right:5px;
+}
 .navbar-default {
   background-color: $bgDefault;
   border-color: $bgHighlight;
@@ -15,6 +18,7 @@ $dropDown       : false;
   .navbar-nav {
     > li {
       > a {
+        cursor: pointer;
         color: $colDefault;
         &:hover,  &:focus {
           color: $colHighlight; }}

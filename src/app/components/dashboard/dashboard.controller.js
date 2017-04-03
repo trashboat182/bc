@@ -14,6 +14,7 @@ function DashboardController($state,LoginService) {
    https://work.smarchal.com/twbscolor/
    https://blackrockdigital.github.io/startbootstrap-landing-page/#
    https://startbootstrap.com/
+   https://jsfiddle.net/hibbard_eu/GArs3/     (Slider)
 
   */
   dashboard.login = login;
