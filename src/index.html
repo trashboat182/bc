@@ -18,6 +18,9 @@
     <!--     Fonts     -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../bower_components/ng-dialog/css/ngDialog.min.css">
+    <link rel="stylesheet" href="../bower_components/ng-dialog/css/ngDialog-theme-default.min.css">
+    <script src="lib/ng-dialog/js/ngDialog.min.js"></script>
 
     <!-- build:css({.tmp/serve,src}) styles/app.css -->
     <!-- inject:css -->
@@ -74,6 +77,9 @@
       .main-icon{
         margin-right:5px;
       }
+      .ngdialog-content{
+        background: #ffffff !important;
+      }
     </style>
 
     <!-- build:js(src) scripts/vendor.js -->
@@ -97,6 +103,8 @@
     <script src="app/components/auth/auth.service.js"></script>
     <script src="app/components/auth/login/login.service.js"></script>
     <script src="app/components/auth/register/register.service.js"></script>
+
+    <script src="../bower_components/ng-dialog/js/ngDialog.min.js"></script>
 
     <!-- inject:partials -->
     <!-- angular templates will be automatically converted in js and inserted here -->

@@ -4,7 +4,7 @@ angular
   .module('bc')
   .controller('CasasAlquilerController', CasasAlquilerController);
 /** @ngInject */
-function CasasAlquilerController($state) {
+function CasasAlquilerController($state,ngDialog,$scope) {
   console.log('CasasAlquilerController');
   $(window).scrollTop(0);
   var casasAlquiler = this;
@@ -18,13 +18,12 @@ function CasasAlquilerController($state) {
    https://jsfiddle.net/hibbard_eu/GArs3/     (Slider)
 
    */
-  casasAlquiler.login = login;
+  casasAlquiler.moreDetails = moreDetails;
   casasAlquiler.register = register;
   casasAlquiler.goDashboard = goDashboard;
 
-  function login() {
-    console.log('login')
-    $state.go('login');
+  function moreDetails() {
+      ngDialog.open({ template: 'app/components/categorias/casas/casasAlquiler/details.modal.html', className: 'ngdialog-theme-default' });
   }
 
   function register() {

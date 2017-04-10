@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('bc', ['ngCookies', 'ngTouch', 'restangular', 'ui.router', 'toastr','firebase']);
+    .module('bc', ['ngCookies', 'ngTouch', 'restangular', 'ui.router', 'toastr','firebase','ngDialog']);
 
 })();
