@@ -2,11 +2,12 @@
 
 angular
   .module('bc')
-  .controller('DashboardController', DashboardController);
+  .controller('TipoCasasController', TipoCasasController);
 /** @ngInject */
-function DashboardController($state,LoginService) {
-  console.log('DashboardController');
-  var dashboard = this;
+function TipoCasasController($state) {
+  console.log('TipoCasasController');
+  $(window).scrollTop(0);
+  var tipoCasas = this;
 
   /** Links */
   /*
@@ -16,11 +17,10 @@ function DashboardController($state,LoginService) {
    https://startbootstrap.com/
    https://jsfiddle.net/hibbard_eu/GArs3/     (Slider)
 
-  */
-  dashboard.login = login;
-  dashboard.register = register;
-  dashboard.goDashboard = goDashboard;
-  dashboard.categoria = categoria;
+   */
+  tipoCasas.login = login;
+  tipoCasas.register = register;
+  tipoCasas.goDashboard = goDashboard;
 
   function login() {
     console.log('login')
@@ -33,14 +33,6 @@ function DashboardController($state,LoginService) {
 
   function goDashboard() {
     $state.go('dashboard');
-  }
-
-  function categoria(tipo){
-    switch(tipo){
-      case 'casas':
-        $state.go('tipoCasas');
-        break;
-    }
   }
 
 

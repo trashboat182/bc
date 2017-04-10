@@ -30,7 +30,7 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div ui-view></div>
+
     <!-- Navigation -->
     <nav ng-if="uiRouterState.current.name!=='cover'" class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
       <div class="container topnav">
@@ -42,21 +42,21 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand topnav" href="#">
+          <a class="navbar-brand topnav" ng-click="main.goDashboard()" style="cursor: pointer;">
             <span class="main-icon glyphicon glyphicon-send"></span>
             Qualia</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-right" style="cursor: pointer;">
             <li>
               <a href="#about">About</a>
             </li>
             <li>
-              <a ng-click="dashboard.register()">Registrarse</a>
+              <a ng-click="main.register()">Registrarse</a>
             </li>
             <li>
-              <a ng-click="dashboard.login()">Iniciar Sesion</a>
+              <a ng-click="main.login()">Iniciar Sesion</a>
             </li>
           </ul>
         </div>
@@ -64,6 +64,9 @@
       </div>
       <!-- /.container -->
     </nav>
+
+    <div ui-view style="margin-top: 50px;"></div>
+
     <style>
       body{
         background-color: #f7f7f7;
@@ -86,6 +89,7 @@
 
     <!-- Controllers -->
     <script src="app/components/cover/cover.controller.js"></script>
+    <script src="app/components/categorias/casas/tipoCasas/tipoCasas.controller.js"></script>
     <!-- Directives -->
 
     <!-- Services -->

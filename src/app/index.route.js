@@ -31,7 +31,13 @@
         templateUrl: 'app/components/dashboard/dashboard.html',
         controller: 'DashboardController',
         controllerAs: 'dashboard'
-      });
+      })
+      .state('tipoCasas', {
+        url: '/tipos/casas',
+        templateUrl: 'app/components/categorias/casas/tipoCasas/tipoCasas.html',
+        controller: 'TipoCasasController',
+        controllerAs: 'tipoCasas'
+      })
 
     $urlRouterProvider.otherwise('/');
   }
