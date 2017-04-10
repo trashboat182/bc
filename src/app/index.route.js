@@ -38,6 +38,12 @@
         controller: 'TipoCasasController',
         controllerAs: 'tipoCasas'
       })
+      .state('casasAlquiler', {
+        url: '/tipos/casas/alquiler',
+        templateUrl: 'app/components/categorias/casas/casasAlquiler/casasAlquiler.html',
+        controller: 'CasasAlquilerController',
+        controllerAs: 'casasAlquiler'
+      });
 
     $urlRouterProvider.otherwise('/');
   }

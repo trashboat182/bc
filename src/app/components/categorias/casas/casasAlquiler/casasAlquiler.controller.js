@@ -2,12 +2,12 @@
 
 angular
   .module('bc')
-  .controller('TipoCasasController', TipoCasasController);
+  .controller('CasasAlquilerController', CasasAlquilerController);
 /** @ngInject */
-function TipoCasasController($state) {
-  console.log('TipoCasasController');
+function CasasAlquilerController($state) {
+  console.log('CasasAlquilerController');
   $(window).scrollTop(0);
-  var tipoCasas = this;
+  var casasAlquiler = this;
 
   /** Links */
   /*
@@ -18,16 +18,13 @@ function TipoCasasController($state) {
    https://jsfiddle.net/hibbard_eu/GArs3/     (Slider)
 
    */
-  tipoCasas.goTipoCasa = goTipoCasa;
-  tipoCasas.register = register;
-  tipoCasas.goDashboard = goDashboard;
+  casasAlquiler.login = login;
+  casasAlquiler.register = register;
+  casasAlquiler.goDashboard = goDashboard;
 
-  function goTipoCasa(tipoCasa) {
-    switch (tipoCasa){
-      case 'alquiler':
-        $state.go('casasAlquiler');
-        break;
-    }
+  function login() {
+    console.log('login')
+    $state.go('login');
   }
 
   function register() {

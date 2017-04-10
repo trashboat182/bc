@@ -8,6 +8,7 @@
   /** @ngInject */
   function MainController($timeout,$state,$scope) {
     var main = this;
+    $(window).scrollTop(0);
     $scope.uiRouterState = $state;
     console.log($scope.uiRouterState.current.name);
     main.login = login;

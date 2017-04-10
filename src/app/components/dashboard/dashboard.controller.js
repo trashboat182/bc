@@ -7,6 +7,7 @@ angular
 function DashboardController($state,LoginService) {
   console.log('DashboardController');
   var dashboard = this;
+  $(window).scrollTop(0);
 
   /** Links */
   /*
