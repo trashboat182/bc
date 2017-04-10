@@ -53,7 +53,9 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right" style="cursor: pointer;">
             <li>
-              <a href="#about">About</a>
+              <a ng-click="main.goDashboard()" style="cursor: pointer;">
+                <span class="main-icon glyphicon glyphicon-plus"></span>
+                Añadir Producto</a>
             </li>
             <li>
               <a ng-click="main.register()">Registrarse</a>
@@ -68,7 +70,7 @@
       <!-- /.container -->
     </nav>
 
-    <div ui-view style="margin-top: 50px;"></div>
+    <div ui-view></div>
 
     <style>
       body{

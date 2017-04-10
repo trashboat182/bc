@@ -4,7 +4,7 @@ angular
   .module('bc')
   .controller('DashboardController', DashboardController);
 /** @ngInject */
-function DashboardController($state,LoginService) {
+function DashboardController($state,ngDialog) {
   console.log('DashboardController');
   var dashboard = this;
   $(window).scrollTop(0);
@@ -22,6 +22,7 @@ function DashboardController($state,LoginService) {
   dashboard.register = register;
   dashboard.goDashboard = goDashboard;
   dashboard.categoria = categoria;
+  dashboard.politicas = politicas;
 
   function login() {
     console.log('login')
@@ -42,6 +43,10 @@ function DashboardController($state,LoginService) {
         $state.go('tipoCasas');
         break;
     }
+  }
+
+  function politicas() {
+    ngDialog.open({ template: 'app/components/dashboard/politicas.modal.html', className: 'ngdialog-theme-default' });
   }
 
 
