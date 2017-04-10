@@ -6,7 +6,9 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController($timeout) {
+  function MainController($timeout,$state,$scope) {
     var vm = this;
+    $scope.uiRouterState = $state;
+    console.log($scope.uiRouterState.current.name);
   }
 })();

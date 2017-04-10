@@ -1,90 +1,58 @@
-<!-- Navigation -->
-<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-  <div class="container topnav">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand topnav" href="#"><span class="main-icon glyphicon glyphicon-send"></span>Qualia</a>
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img class="first-slide" src="https://static1.gamespot.com/uploads/original/43/434805/3026092-2827525372-dota-.jpg" alt="First slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Example headline.</h1>
+          <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+          <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+        </div>
+      </div>
     </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a ng-click="dashboard.register()">Registrarse</a>
-        </li>
-        <li>
-          <a ng-click="dashboard.login()">Iniciar Sesion</a>
-        </li>
-      </ul>
+    <div class="item">
+      <img class="second-slide" src="https://images2.alphacoders.com/505/505544.jpg" alt="Second slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Another example headline.</h1>
+          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+        </div>
+      </div>
     </div>
-    <!-- /.navbar-collapse -->
+    <div class="item">
+      <img class="third-slide" src="https://wallpaperscraft.com/image/sven_furious_rune_sword_dota_2_art_95272_1920x1080.jpg" alt="Third slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>One more for good measure.</h1>
+          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+        </div>
+      </div>
+    </div>
   </div>
-  <!-- /.container -->
-</nav>
-
-  <!-- Carousel
-  ================================================== -->
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img class="first-slide" src="https://static1.gamespot.com/uploads/original/43/434805/3026092-2827525372-dota-.jpg" alt="First slide">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Example headline.</h1>
-            <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <img class="second-slide" src="https://images2.alphacoders.com/505/505544.jpg" alt="Second slide">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <img class="third-slide" src="https://wallpaperscraft.com/image/sven_furious_rune_sword_dota_2_art_95272_1920x1080.jpg" alt="Third slide">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>One more for good measure.</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">-->
-      <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
-      <!--<span class="sr-only">Previous</span>-->
-    <!--</a>-->
-    <!--<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">-->
-      <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
-      <!--<span class="sr-only">Next</span>-->
-    <!--</a>-->
-  </div><!-- /.carousel -->
+  <!--<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">-->
+  <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+  <!--<span class="sr-only">Previous</span>-->
+  <!--</a>-->
+  <!--<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">-->
+  <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+  <!--<span class="sr-only">Next</span>-->
+  <!--</a>-->
+</div><!-- /.carousel -->
 
 
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
+<!-- Marketing messaging and featurettes
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
 
 </div>
 
@@ -94,246 +62,100 @@
 
   <!-- Page Header -->
   <div class="row">
-    <div class="col-lg-12">
-      <h1 class="page-header">Page Heading
-        <small>Secondary Text</small>
-      </h1>
+    <div class="col-lg-12 text-center words-intro">
+      <div class="col-sm-4">
+        <p class="text-center">FACIL</p>
+      </div>
+      <div class="col-sm-4">
+        <p class="text-center">SEGURO</p>
+      </div>
+      <div class="col-sm-4">
+        <p class="text-center">SIN INTERMEDIARIOS</p>
+      </div>
     </div>
   </div>
   <!-- /.row -->
 
-  <div ng-if="false">
-    <!-- Projects Row -->
-    <div class="row">
-      <div class="col-md-4 portfolio-item">
-        <a href="#">
-          <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-        </a>
-        <h3>
-          <a href="#">Project Name</a>
-        </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-      </div>
-      <div class="col-md-4 portfolio-item">
-        <a href="#">
-          <img class="img-responsive" src="http://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/dota_2_official_9.jpg" alt="">
-        </a>
-        <h3>
-          <a href="#">Project Name</a>
-        </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-      </div>
-      <div class="col-md-4 portfolio-item">
-        <a href="#">
-          <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-        </a>
-        <h3>
-          <a href="#">Project Name</a>
-        </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-      </div>
-    </div>
-    <!-- /.row -->
-
-    <!-- Projects Row -->
-    <div class="row">
-      <div class="col-md-4 portfolio-item">
-        <a href="#">
-          <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-        </a>
-        <h3>
-          <a href="#">Project Name</a>
-        </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-      </div>
-      <div class="col-md-4 portfolio-item">
-        <a href="#">
-          <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-        </a>
-        <h3>
-          <a href="#">Project Name</a>
-        </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-      </div>
-      <div class="col-md-4 portfolio-item">
-        <a href="#">
-          <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-        </a>
-        <h3>
-          <a href="#">Project Name</a>
-        </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-      </div>
-    </div>
-
-    <!-- Projects Row -->
-    <div class="row">
-      <div class="col-md-4 portfolio-item">
-        <a href="#">
-          <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-        </a>
-        <h3>
-          <a href="#">Project Name</a>
-        </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-      </div>
-      <div class="col-md-4 portfolio-item">
-        <a href="#">
-          <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-        </a>
-        <h3>
-          <a href="#">Project Name</a>
-        </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-      </div>
-      <div class="col-md-4 portfolio-item">
-        <a href="#">
-          <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-        </a>
-        <h3>
-          <a href="#">Project Name</a>
-        </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-      </div>
-    </div>
-    <!-- /.row -->
-  </div>
-
-  <div class="row">
-
-    <div class="col-sm-4 col-lg-4 col-md-4">
-      <div class="thumbnail">
-        <img src="http://images.techtimes.com/data/images/full/283592/dota-2-patch-7-00.png" alt="">
-        <div class="caption">
-          <h4 class="pull-right">$24.99</h4>
-          <h4><a href="#">First Product</a>
-          </h4>
-          <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+  <!-- Portfolio Grid Section -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2>Portfolio</h2>
+          <hr class="star-primary">
         </div>
-        <div class="ratings">
-          <p class="pull-right">15 reviews</p>
-          <p>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-          </p>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 portfolio-item">
+          <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+            <div class="caption">
+              <div class="caption-content">
+                <span>Casas</span>
+                <span class="main-icon glyphicon glyphicon-hand-right"></span>
+              </div>
+            </div>
+            <img src="app\components\cover\images\portfolio\cabin.png" class="img-responsive" alt="Cabin">
+          </a>
+        </div>
+        <div class="col-sm-4 portfolio-item">
+          <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+            <div class="caption">
+              <div class="caption-content">
+                <span>Vehículos</span>
+                <span class="main-icon glyphicon glyphicon-hand-right"></span>
+              </div>
+            </div>
+            <img src="app\components\cover\images\portfolio\cake.png" class="img-responsive" alt="Slice of cake">
+          </a>
+        </div>
+        <div class="col-sm-4 portfolio-item">
+          <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+            <div class="caption">
+              <div class="caption-content">
+                <span>Electronicos</span>
+                <span class="main-icon glyphicon glyphicon-hand-right"></span>
+              </div>
+            </div>
+            <img src="app\components\cover\images\portfolio\circus.png" class="img-responsive" alt="Circus tent">
+          </a>
+        </div>
+        <div class="col-sm-4 portfolio-item">
+          <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+            <div class="caption">
+              <div class="caption-content">
+                <span>Ropa</span>
+                <span class="main-icon glyphicon glyphicon-hand-right"></span>
+              </div>
+            </div>
+            <img src="app\components\cover\images\portfolio\game.png" class="img-responsive" alt="Game controller">
+          </a>
+        </div>
+        <div class="col-sm-4 portfolio-item">
+          <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+            <div class="caption">
+              <div class="caption-content">
+                <span>Qualia</span>
+                <span class="main-icon glyphicon glyphicon-hand-right"></span>
+              </div>
+            </div>
+            <img src="app\components\cover\images\portfolio\safe.png" class="img-responsive" alt="Safe">
+          </a>
+        </div>
+        <div class="col-sm-4 portfolio-item">
+          <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+            <div class="caption">
+              <div class="caption-content">
+                <span>Empleos Servicios</span>
+                <span class="main-icon glyphicon glyphicon-hand-right"></span>
+              </div>
+            </div>
+            <img src="app\components\cover\images\portfolio\submarine.png" class="img-responsive" alt="Submarine">
+          </a>
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="col-sm-4 col-lg-4 col-md-4">
-      <div class="thumbnail">
-        <img src="http://images.techtimes.com/data/images/full/283592/dota-2-patch-7-00.png" alt="">
-        <div class="caption">
-          <h4 class="pull-right">$64.99</h4>
-          <h4><a href="#">Second Product</a>
-          </h4>
-          <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="ratings">
-          <p class="pull-right">12 reviews</p>
-          <p>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star-empty"></span>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-4 col-lg-4 col-md-4">
-      <div class="thumbnail">
-        <img src="http://images.techtimes.com/data/images/full/283592/dota-2-patch-7-00.png" alt="">
-        <div class="caption">
-          <h4 class="pull-right">$74.99</h4>
-          <h4><a href="#">Third Product</a>
-          </h4>
-          <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="ratings">
-          <p class="pull-right">31 reviews</p>
-          <p>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star-empty"></span>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-4 col-lg-4 col-md-4">
-      <div class="thumbnail">
-        <img src="http://images.techtimes.com/data/images/full/283592/dota-2-patch-7-00.png" alt="">
-        <div class="caption">
-          <h4 class="pull-right">$84.99</h4>
-          <h4><a href="#">Fourth Product</a>
-          </h4>
-          <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="ratings">
-          <p class="pull-right">6 reviews</p>
-          <p>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star-empty"></span>
-            <span class="glyphicon glyphicon-star-empty"></span>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-4 col-lg-4 col-md-4">
-      <div class="thumbnail">
-        <img src="http://images.techtimes.com/data/images/full/283592/dota-2-patch-7-00.png" alt="">
-        <div class="caption">
-          <h4 class="pull-right">$94.99</h4>
-          <h4><a href="#">Fifth Product</a>
-          </h4>
-          <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="ratings">
-          <p class="pull-right">18 reviews</p>
-          <p>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star-empty"></span>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-4 col-lg-4 col-md-4">
-      <div class="thumbnail">
-        <img src="http://images.techtimes.com/data/images/full/283592/dota-2-patch-7-00.png" alt="">
-        <div class="caption">
-          <h4 class="pull-right">$94.99</h4>
-          <h4><a href="#">Fifth Product</a>
-          </h4>
-          <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="ratings">
-          <p class="pull-right">18 reviews</p>
-          <p>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star-empty"></span>
-          </p>
-        </div>
-      </div>
-    </div>
-
-  </div>
 
   <hr>
 
@@ -385,7 +207,7 @@
 <style>
   /* Carousel base class */
   .carousel {
-    height: 500px;
+    height: 400px;
     /*margin-bottom: 60px;*/
   }
   /* Since positioning the image, we need to help out the caption */
@@ -395,7 +217,7 @@
 
   /* Declare heights because of positioning of img element */
   .carousel .item {
-    height: 500px;
+    height: 400px;
     background-color: #777;
   }
   .carousel-inner > .item > img {
@@ -403,7 +225,7 @@
     top: 0;
     left: 0;
     min-width: 100%;
-    height: 500px;
+    height: 400px;
   }
 
   .caption {
@@ -437,6 +259,127 @@
 
   footer {
     margin: 50px 0;
+  }
+
+  /*Portfolio*/
+  section {
+    /*padding: 100px 0;*/
+  }
+  section h2 {
+    margin: 0;
+    font-size: 3em;
+  }
+  section.success {
+    background: #18BC9C;
+    color: white;
+  }
+  @media (max-width: 767px) {
+    section {
+      padding: 75px 0;
+    }
+    section.first {
+      padding-top: 75px;
+    }
+  }
+  #portfolio .portfolio-item {
+    margin: 0 0 15px;
+    right: 0;
+  }
+  #portfolio .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  #portfolio .portfolio-item .portfolio-link .caption {
+    background: rgba(24, 188, 156, 0.9);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+  }
+  #portfolio .portfolio-item .portfolio-link .caption:hover {
+    opacity: 1;
+  }
+  #portfolio .portfolio-item .portfolio-link .caption .caption-content {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+    top: 50%;
+    margin-top: -12px;
+    color: white;
+  }
+  #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+    margin-top: -12px;
+  }
+  #portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
+  #portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+    margin: 0;
+  }
+  #portfolio * {
+    z-index: 2;
+  }
+  @media (min-width: 767px) {
+    #portfolio .portfolio-item {
+      margin: 0 0 30px;
+    }
+  }
+  .floating-label-form-group {
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #eeeeee;
+  }
+  .floating-label-form-group input,
+  .floating-label-form-group textarea {
+    z-index: 1;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    border: none;
+    border-radius: 0;
+    font-size: 1.5em;
+    background: none;
+    box-shadow: none !important;
+    resize: none;
+  }
+  .floating-label-form-group label {
+    display: block;
+    z-index: 0;
+    position: relative;
+    top: 2em;
+    margin: 0;
+    font-size: 0.85em;
+    line-height: 1.764705882em;
+    vertical-align: middle;
+    vertical-align: baseline;
+    opacity: 0;
+    -webkit-transition: top 0.3s ease,opacity 0.3s ease;
+    -moz-transition: top 0.3s ease,opacity 0.3s ease;
+    -ms-transition: top 0.3s ease,opacity 0.3s ease;
+    transition: top 0.3s ease,opacity 0.3s ease;
+  }
+  .floating-label-form-group:not(:first-child) {
+    padding-left: 14px;
+    border-left: 1px solid #eeeeee;
+  }
+  .floating-label-form-group-with-value label {
+    top: 0;
+    opacity: 1;
+  }
+  .floating-label-form-group-with-focus label {
+    color: #18BC9C;
+  }
+  /*Words Facil-...*/
+  .words-intro{
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: "Arial Black", Gadget, sans-serif;
   }
 
 </style>
