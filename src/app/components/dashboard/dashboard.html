@@ -61,16 +61,16 @@
 <div class="container">
 
   <!-- Page Header -->
-  <div class="row">
+  <div class="row" ng-if="false">
     <div class="col-lg-12 text-center words-intro">
       <div class="col-sm-4">
-        <p class="text-center">FACIL</p>
+        <p class="text-center" style="color: #3b5998">FACIL</p>
       </div>
       <div class="col-sm-4">
-        <p class="text-center">SEGURO</p>
+        <p class="text-center" style="color: #3b5998">SEGURO</p>
       </div>
       <div class="col-sm-4">
-        <p class="text-center">SIN INTERMEDIARIOS</p>
+        <p class="text-center" style="color: #3b5998">SIN INTERMEDIARIOS</p>
       </div>
     </div>
   </div>
@@ -79,12 +79,29 @@
   <!-- Portfolio Grid Section -->
   <section id="portfolio">
     <div class="container">
+
       <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2>Portfolio</h2>
-          <hr class="star-primary">
+        <div class="col-lg-5 col-sm-6">
+          <hr class="section-heading-spacer">
+          <h3 class="section-heading">Ve nuestros productos!</h3>
+          <p class="lead">A special thanks to Death to the Stock Photoe a member.</p>
+        </div>
+        <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+          <hr class="section-heading-spacer">
+          <div class="clearfix"></div>
+          <div id="imaginary_container">
+            <div class="input-group stylish-input-group">
+              <input type="text" class="form-control"  placeholder="¿Qué estás buscando?" >
+              <span class="input-group-addon">
+                        <button type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+            </div>
+          </div>
         </div>
       </div>
+
       <div class="row">
         <div class="col-sm-4 portfolio-item">
           <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
@@ -156,46 +173,71 @@
     </div>
   </section>
 
-
-  <hr>
-
-  <!-- Pagination -->
-  <div class="row text-center">
-    <div class="col-lg-12">
-      <ul class="pagination">
-        <li>
-          <a href="#">&laquo;</a>
-        </li>
-        <li class="active">
-          <a href="#">1</a>
-        </li>
-        <li>
-          <a href="#">2</a>
-        </li>
-        <li>
-          <a href="#">3</a>
-        </li>
-        <li>
-          <a href="#">4</a>
-        </li>
-        <li>
-          <a href="#">5</a>
-        </li>
-        <li>
-          <a href="#">&raquo;</a>
-        </li>
-      </ul>
+  <!-- Services Section -->
+  <hr class="section-heading-spacer">
+  <section id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Services</h2>
+          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+          <h4 class="service-heading">E-Commerce</h4>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+        </div>
+        <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+          <h4 class="service-heading">Responsive Design</h4>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+        </div>
+        <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+          <h4 class="service-heading">Web Security</h4>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+        </div>
+      </div>
     </div>
-  </div>
-  <!-- /.row -->
+  </section>
 
-  <hr>
+  <hr class="section-heading-spacer">
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+          <h2 class="section-heading">Contactanos!</h2>
+          <hr class="primary">
+          <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+        </div>
+        <div class="col-lg-4 col-lg-offset-2 text-center">
+          <i class="fa fa-phone fa-3x sr-contact"></i>
+          <p>+591 - 77589653</p>
+        </div>
+        <div class="col-lg-4 text-center">
+          <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+          <p><a href="mailto:your-email@your-domain.com">qualia@ventasonline.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer>
     <div class="row">
       <div class="col-lg-12">
-        <p>Copyright &copy; Your Website 2014</p>
+        <p>Copyright &copy; Qualia 2017</p>
       </div>
     </div>
     <!-- /.row -->
@@ -258,7 +300,7 @@
   }
 
   footer {
-    margin: 50px 0;
+    margin: 30px 0;
   }
 
   /*Portfolio*/
@@ -380,6 +422,35 @@
     margin-top: 15px;
     font-size: 20px;
     font-family: "Arial Black", Gadget, sans-serif;
+  }
+
+  /* Searcher */
+  #imaginary_container{
+    /*margin-top:20%;*/ /* Don't copy this */
+  }
+  .stylish-input-group .input-group-addon{
+    background: white !important;
+  }
+  .stylish-input-group .form-control{
+    border-right:0;
+    box-shadow:0 0 0;
+    border-color:#ccc;
+  }
+  .stylish-input-group button{
+    border:0;
+    background:transparent;
+  }
+  /*Id: Contact */
+  #contact {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  #services{
+    padding-top:40px;
+    padding-bottom:40px;
+  }
+  .section-heading-spacer{
+    border: 2px solid #eeeeee;
   }
 
 </style>
