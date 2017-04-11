@@ -1,0 +1,179 @@
+<div class="modal-header" style="border-bottom: 0px;">
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  </button>
+  <h4 class="modal-title">Añade tu producto!</h4>
+</div>
+<div class="modal-body">
+  <form class="form-horizontal" role="form" method="post" action="index.php">
+    <div class="form-group">
+      <label for="name" class="col-sm-2 control-label">Nombre</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="name" name="name" placeholder="Nombre y Apellido" value="">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email" class="col-sm-2 control-label">Email</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@dominio.com" value="">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email" class="col-sm-2 control-label">Zona</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese la zona donde se encuentra" value="">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="message" class="col-sm-2 control-label">Descripcion</label>
+      <div class="col-sm-10">
+        <textarea class="form-control" rows="4" name="message"></textarea>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="human" class="col-sm-2 control-label">Ciudad</label>
+      <div class="col-sm-10">
+
+        <div class="btn-group btn-input clearfix">
+          <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+            <span data-bind="label">Elija su ciudad...</span>&nbsp;<span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a>La Paz</a></li>
+            <li><a>Cochabamba</a></li>
+            <li><a>Santa Cruz</a></li>
+            <li><a>Sucre</a></li>
+            <li><a>Potosi</a></li>
+            <li><a>Beni</a></li>
+            <li><a>Pando</a></li>
+            <li><a>Oruro</a></li>
+            <li><a>Tarija</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="message" class="col-sm-2 control-label">Telefono</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="cel" name="cel" placeholder="Telefono o Celular" value="">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="message" class="col-sm-2 control-label">
+      </label>
+      <div class="col-sm-10">
+        <img class="profile-pic" src="app/components/cover/images/portfolio/cabin.png" />
+        <div class="upload-button" style="cursor:pointer;">Cargar imagen</div>
+        <input style="display: none;" class="file-upload" type="file" accept="image/*"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="human" class="col-sm-2 control-label">Categoria</label>
+      <div class="col-sm-10">
+
+        <div class="btn-group btn-input clearfix">
+          <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+            <span data-bind="label">Elija una categoria...</span>&nbsp;<span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a>Casas</a></li>
+            <li><a>Autos</a></li>
+            <li><a>Electronicos</a></li>
+            <li><a>Oficinas</a></li>
+            <li><a>Otros</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="human" class="col-sm-2 control-label">Seccion</label>
+      <div class="col-sm-10">
+
+        <div class="btn-group btn-input clearfix">
+          <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+            <span data-bind="label">Elija la seccion...</span>&nbsp;<span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a>Casas en Venta</a></li>
+            <li><a>Casas en Alquiler</a></li>
+            <li><a>Oficinas y Locales</a></li>
+            <li><a>Terrenos</a></li>
+            <li><a>Alquiler Temporario</a></li>
+            <li><a>Casas en Anticretico</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-sm-10 col-sm-offset-2">
+        <! Will be used to display an alert to the user>
+      </div>
+    </div>
+  </form>
+
+
+</div>
+<style>
+  .upload-button {
+    padding: 4px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: block;
+    float: left;
+  }
+
+  .profile-pic {
+    max-width: 200px;
+    max-height: 200px;
+    display: block;
+  }
+
+  .file-upload {
+    display: none;
+  }
+</style>
+<div class="modal-footer" style="text-align: center">
+  <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+  <button type="button" class="btn btn-primary" ng-click="showProduct()">Guardar</button></div>
+
+<script>
+  $( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
+
+    var $target = $( event.currentTarget );
+
+    $target.closest( '.btn-group' )
+      .find( '[data-bind="label"]' ).text( $target.text() )
+      .end()
+      .children( '.dropdown-toggle' ).dropdown( 'toggle' );
+
+    return false;
+
+  });
+
+  //Image Uplaoder
+  var readURL = function(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+        $('.profile-pic').attr('src', e.target.result);
+      }
+
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+
+
+  $(".file-upload").on('change', function(){
+    readURL(this);
+  });
+
+  $(".upload-button").on('click', function() {
+    $(".file-upload").click();
+  });
+</script>

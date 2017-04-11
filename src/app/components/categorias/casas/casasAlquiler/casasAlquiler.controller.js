@@ -21,9 +21,14 @@ function CasasAlquilerController($state,ngDialog,$scope) {
   casasAlquiler.moreDetails = moreDetails;
   casasAlquiler.register = register;
   casasAlquiler.goDashboard = goDashboard;
+  casasAlquiler.detailExample = detailExample;
 
   function moreDetails() {
       ngDialog.open({ template: 'app/components/categorias/casas/casasAlquiler/details.modal.html', className: 'ngdialog-theme-default' });
+  }
+
+  function detailExample() {
+    ngDialog.open({ template: 'app/components/categorias/casas/casasAlquiler/detailsExample.modal.html', className: 'ngdialog-theme-default' });
   }
 
   function register() {

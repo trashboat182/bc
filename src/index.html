@@ -35,7 +35,7 @@
     <![endif]-->
 
     <!-- Navigation -->
-    <nav ng-if="uiRouterState.current.name!=='cover'" class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <nav ng-if="!uiRouterState.current.name || uiRouterState.current.name!=='cover'" class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
       <div class="container topnav">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -53,7 +53,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right" style="cursor: pointer;">
             <li>
-              <a ng-click="main.goDashboard()" style="cursor: pointer;">
+              <a ng-click="main.addProduct()" style="cursor: pointer;">
                 <span class="main-icon glyphicon glyphicon-plus"></span>
                 Añadir Producto</a>
             </li>
@@ -81,6 +81,7 @@
       }
       .ngdialog-content{
         background: #ffffff !important;
+        width: 80% !important;
       }
     </style>
 
